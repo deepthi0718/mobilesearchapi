@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./tab-icon.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <div class="header">
+        <img src="./netfilex.png" alt="">
+        <h2>Search unlimited movies TV shows and more</h2>
+        <p>Ready to watch? Enter your Movie name to check if its a good choice!</p>
+        <div class="flex">
+            
+            <input type="text" placeholder="Seach here.." id="movieName">
+
+            <button class="btn" onclick="search()">Search Movie</button>
+        </div>
+    </div>
+
+    <div class="container ">
+        
+        <div class="movie-content">
+            <div id="para">
+            <h1 id="tittle">The Avengers</h1>
+            <p>Genre: <span id="Genre"></span></p>
+            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nostrum consequatur consequuntur, officiis tempora atque dolor!</p>
+            <p>Actors: <span id="Actors"></span></p>
+            <p>Directors: <span id="directors"></span></p>
+            <p>Awards: <span id="awards"></span></p>
+            <p>Box office collection:<span id="collection"></span></p>
+            <p>Languages: <span id="ln"></span></p>
+            <p>IMDB Ratings:<span id="rating"></span></p>
+            </div>
+            <img id="poster" src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg" alt="">
+        </div>
+       
+    </div>
+     <h1 id="error"></h1>
+    
+    
+    <div id="loader" class="loader"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
